@@ -1,38 +1,35 @@
-# sv
+# Typst Collaboration Platform - Frontend
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Real-time collaborative Typst editor with React + TypeScript + YJS
 
-## Creating a project
+## Quick Start
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Open http://localhost:5173
 
-To create a production version of your app:
+## Features
 
-```sh
-npm run build
+✅ Authentication (register/login)
+✅ Project management
+✅ Real-time collaboration with YJS
+✅ CodeMirror 6 editor
+✅ Online presence
+✅ Auto-sync
+
+## Configuration
+
+Edit `.env`:
+```
+VITE_API_URL=http://reva-dl:8002
+VITE_WS_URL=ws://reva-dl:8002
 ```
 
-You can preview the production build with `npm run preview`.
+## Test Collaboration
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+1. Open project in two browser windows
+2. Edit in one window
+3. See changes in the other instantly!

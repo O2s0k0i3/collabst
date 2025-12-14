@@ -50,7 +50,7 @@ uv run uvicorn main:app --reload --host 0.0.0.0 --port 8002
 ### 2. Start Frontend
 
 ```bash
-cd frontend_dev
+cd frontend
 
 # Install dependencies
 npm install

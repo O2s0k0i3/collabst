@@ -1,11 +1,12 @@
 <script lang="ts">
-	import favicon from '$lib/assets/collabst-logo.svg';
-
-	let { children } = $props();
+  import { onMount } from 'svelte'
+  import { theme } from '$lib/stores/theme'
+  import '../index.css'
+  
+  // Initialize theme on mount
+  onMount(() => {
+    theme.init()
+  })
 </script>
 
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
-
-{@render children()}
+<slot />

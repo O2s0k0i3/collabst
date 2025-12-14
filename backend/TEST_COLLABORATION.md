@@ -12,7 +12,7 @@
 
 2. **Start Frontend**:
    ```bash
-   cd frontend_dev
+   cd frontend
    npm run dev
    ```
 
