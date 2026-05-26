@@ -102,6 +102,17 @@ Your instance will be available at the `WEB_URL` you configured.
 
 > **Tip:** Generate a secure secret key with `openssl rand -hex 32`.
 
+### Nightly builds 🌙
+
+> [!WARNING]
+> Nightly builds are built from the latest commit on `main` and may be unstable or broken. Use them at your own risk.
+
+If you want to try the latest features before a stable release, you can run the nightly image by setting `COLLABST_TAG=nightly` in your `.env` file, or by passing it inline:
+
+```bash
+COLLABST_TAG=nightly docker compose up -d
+```
+
 ### Detailed Setup📜
 For the complete setup instructions, you can follow the [`SETUP.md`](/SETUP.md) file.
 
